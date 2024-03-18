@@ -43,6 +43,7 @@ const accordionFlush = document.getElementById("accordionFlush");
 
 buttonTimer.addEventListener("click", () => {
     accordionFlush.classList.toggle("d-none");
+    number = 30;
     clearInterval(intervalId); // Limpiar el intervalo existente para evitar múltiples intervalos activos
     intervalId = setInterval(() => {
         timerElement.textContent = `Tu tiempo es de ${number} segundos`; // Mostrar el número actual en el elemento del cronómetro
