@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,105 +18,34 @@
         }
     </style>
 </head>
+
 <body>
-    <header id="header" class="vh-50">
-        <nav class="navbar navbar-expand-md bg-warning">
+    <header id="header" class="mb-3">
+        <nav class="navbar navbar-expand-md bg-white">
             <div class="container">
-                <a href="index.html" class="navbar-brand fs-2 text-black">Logo</a>
+                <a class="navbar-brand fs-2 text-black">Logo</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto" style="gap: 10px;">
                         <li class="nav-item">
-                            <a href="MyProgress.html" class="nav-link text-black">Mi Progreso</a>
+                            <a href="/index.html" class="nav-link text-secondary">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-black">Soporte Técnico</a>
+                            <a href="/MyProgress.html" class="nav-link text-secondary">Mi Progreso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-secondary">Soporte Técnico</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <h1 class="ps-3 mt-5 mb-5 fw-bold fs-1">Mi Progreso</h1>
+        <div class="d-flex justify-content-center">
+            <hr class="w-75 border-secondary" />
+        </div>
     </header>
-    <!-- <div class="row g-4 w-100 ms-0 mb-5">
-        <div class="col mb-3">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <div class="btn-group">
-                        <a href="/index.html" class="btn btn-primary active" aria-current="page">Active link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <div class="btn-group">
-                        <a href="/index.html" class="btn btn-primary active" aria-current="page">Active link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <div class="btn-group">
-                        <a href="/index.html" class="btn btn-primary active" aria-current="page">Active link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <div class="btn-group">
-                        <a href="/index.html" class="btn btn-primary active" aria-current="page">Active link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.</p>
-                    <div class="btn-group">
-                        <a href="/index.html" class="btn btn-primary active" aria-current="page">Active link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="row row-cols-1 row-cols-md-3 g-4 w-100 ms-0 mb-5">
         <div class="col">
             <div class="card">
@@ -123,12 +53,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Matemáticas</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <!-- <div class="btn-group">
-                        <a href="/Math_Lvl1.html" class="btn btn-primary" aria-current="page">Nivel 1</a>
-                        <a href="#" class="btn btn-primary">Nivel 2</a>
-                        <a href="#" class="btn btn-primary">Nivel 3</a>
-                    </div> -->
+                        additional content. This content is a little bit longer.
+                    </p>
                     <div class="me-1">
                         <a href="/Math_Lvl1.html" class="btn btn-primary">Nivel 1</a>
                         <a type="button" class="btn btn btn-secondary"><i class="bi bi-lock"></i></a>

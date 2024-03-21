@@ -1,8 +1,3 @@
-// const alert = document.getElementById("alert");
-// const alert2 = document.getElementById("alert2");
-// const buttons = document.querySelectorAll(".btn");
-
-
 function setupButtonGroup(buttons, alert, respuestasCorrectas) {
     function showAlert(respuesta) {
         alert.classList.toggle("d-none");
@@ -37,19 +32,20 @@ setupButtonGroup(group2Buttons, alertGroup2, respuestasCorrectasGroup2);
 let number = 30;
 let intervalId;
 
-const timerElement = document.querySelector(".bg-warning p"); 
+const timerElement = document.querySelector(".bg-white p"); 
 const buttonTimer = document.getElementById("cronometrar");
 const accordionFlush = document.getElementById("accordionFlush");
 
 buttonTimer.addEventListener("click", () => {
     accordionFlush.classList.toggle("d-none");
+    buttonTimer.classList.toggle("d-none");
     number = 30;
     clearInterval(intervalId); // Limpiar el intervalo existente para evitar múltiples intervalos activos
     intervalId = setInterval(() => {
-        timerElement.textContent = `Tu tiempo es de ${number} segundos`; // Mostrar el número actual en el elemento del cronómetro
+        timerElement.textContent = `Tu tiempo es de ${number} segundos`; 
         if (number === 0) {
             clearInterval(intervalId);
-            timerElement.textContent = `Se acabo el tiempo`; // Mostrar el número actual en el elemento del cronómetro
+            timerElement.textContent = `Se acabo el tiempo`; 
             accordionFlush.classList.toggle("d-none");
         }
         number--;
